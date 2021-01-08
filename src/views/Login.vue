@@ -76,7 +76,8 @@ import Recaptcha from '../components/recaptcha';
     },
     methods: {
       onSubmit(event) {
-        let api = '/api/show';
+        // let api = '/api/show';
+        let api = `${process.env.VUE_APP_SERVER_URL}/master/data.json`;
         let vm = this;
 
         event.preventDefault()
